@@ -257,4 +257,30 @@ h1 {
 [data-type="8"] {
   background-image: url("../assets/sprites/digits/8.png");
 }
+
+/* preload images */
+body::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  z-index: -1000;
+  overflow: hidden;
+  content: url("../assets/sprites/tiles/hidden.png")
+    url("../assets/sprites/tiles/opened.png")
+    url("../assets/sprites/tiles/flag.png")
+    url("../assets/sprites/tiles/mine.png")
+    url("../assets/sprites/tiles/mine_crossed.png")
+    url("../assets/sprites/tiles/mine_red.png")
+    url("../assets/sprites/tiles/qmark.png")
+    url("../assets/sprites/tiles/qmark_pressed.png")
+    url("../assets/sprites/digits/1.png") url("../assets/sprites/digits/2.png")
+    url("../assets/sprites/digits/3.png") url("../assets/sprites/digits/4.png")
+    url("../assets/sprites/digits/5.png") url("../assets/sprites/digits/6.png")
+    url("../assets/sprites/digits/7.png") url("../assets/sprites/digits/8.png")
+    url("../assets/sprites/time/0.png") url("../assets/sprites/time/1.png")
+    url("../assets/sprites/time/2.png") url("../assets/sprites/time/3.png")
+    url("../assets/sprites/time/4.png") url("../assets/sprites/time/5.png")
+    url("../assets/sprites/time/6.png") url("../assets/sprites/time/7.png")
+    url("../assets/sprites/time/8.png") url("../assets/sprites/time/9.png");
+}
 /* board END */
