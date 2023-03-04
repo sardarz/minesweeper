@@ -281,6 +281,8 @@ body::after {
     url("../assets/sprites/time/2.png") url("../assets/sprites/time/3.png")
     url("../assets/sprites/time/4.png") url("../assets/sprites/time/5.png")
     url("../assets/sprites/time/6.png") url("../assets/sprites/time/7.png")
-    url("../assets/sprites/time/8.png") url("../assets/sprites/time/9.png");
+    url("../assets/sprites/time/8.png") url("../assets/sprites/time/9.png")
+    url("../assets/sprites/faces/dead.png") url("../assets/sprites/faces/shocked.png") url("../assets/sprites/faces/smiley.png") url("../assets/sprites/faces/smiley_pressed.png") url("../assets/sprites/faces/glasses.png")
+    ;
 }
 /* board END */
