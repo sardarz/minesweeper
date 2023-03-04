@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/main.js" defer type="module"></script>
+  </head>
+  <body>
+    <main class="main">
+      <h1>Minesweeper by Sardar</h1>
+      <div class="header">
+        <div class="header_upper flex">
+          <div class="left_corner"></div>
+          <div class="border_hor"></div>
+          <div class="right_corner"></div>
+        </div>
+        <div class="header_middle flex">
+          <div class="left_vert"></div>
+          <div class="header-content hor_width">
+            <div class="timer mine-count">
+              <div class="digit-1 digit" data-digit="0"></div>
+              <div class="digit-2 digit" data-digit="0"></div>
+              <div class="digit-3 digit" data-digit="0"></div>
+            </div>
+            <div class="face" data-face="default"></div>
+            <div class="timer time-count">
+              <div class="digit-1 digit" data-digit="0"></div>
+              <div class="digit-2 digit" data-digit="0"></div>
+              <div class="digit-3 digit" data-digit="0"></div>
+            </div>
+          </div>
+          <div class="right_vert"></div>
+        </div>
+        <div class="header_lower flex">
+          <div class="left_t"></div>
+          <div class="border_hor"></div>
+          <div class="right_t"></div>
+        </div>
+      </div>
+      <div class="board">
+        <div class="board_upper flex">
+          <div class="left_vert"></div>
+          <div class="grid hor_width"></div>
+          <div class="right_vert"></div>
+        </div>
+
+        <div class="board_lower flex">
+          <div class="bot_left_corner"></div>
+          <div class="border_hor"></div>
+          <div class="bot_right_corner"></div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
