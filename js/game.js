@@ -195,7 +195,6 @@ const generateMinePositions = (boardSize, numOfMines) => {
       x: Math.floor(Math.random() * boardSize),
       y: Math.floor(Math.random() * boardSize),
     };
-
     if (!array.some((el) => hasSamePosition(el, pos))) array.push(pos);
   }
 

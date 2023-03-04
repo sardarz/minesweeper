@@ -146,5 +146,3 @@ face.addEventListener("mousedown", () => {
 });
 
 startGame();
-
-board[0][15].mine = true;
