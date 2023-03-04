@@ -55,10 +55,14 @@ let board;
 let grid = document.querySelector(".grid");
 grid.style.setProperty("--board-size", board_size);
 
+let firstTime = true
 const startGame = () => {
+  
   resetGame();
+  // console.log(board);
   board.forEach((row) => {
     row.forEach((tile) => {
+      if (firstTime) tile.mine = true
       grid.append(tile.element);
       tile.element.addEventListener("click", (e) => onTileClick(e, tile));
       tile.element.addEventListener("contextmenu", (e) =>
@@ -69,7 +73,9 @@ const startGame = () => {
       );
       tile.element.addEventListener("mouseup", (e) => onTileMouseUp(e, tile));
     });
+    firstTime = false
   });
+  console.log(board);
 };
 
 const resetGame = () => {
@@ -145,3 +151,5 @@ face.addEventListener("mousedown", () => {
 });
 
 startGame();
+
+board[0][15].mine = true
